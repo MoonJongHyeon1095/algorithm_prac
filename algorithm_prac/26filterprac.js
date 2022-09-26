@@ -1,5 +1,5 @@
 arr = [4,3,2,1]
-
+console.log(Math.min(arr))
 console.log(Math.min(... arr))
 
 function solution(arr) {
