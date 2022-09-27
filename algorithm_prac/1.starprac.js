@@ -1,5 +1,6 @@
 let data = "5 3"
 
+function soluton(s){
 const n = data.split(" ");
     const a = Number(n[0]), b = Number(n[1]);
     
@@ -12,4 +13,6 @@ const n = data.split(" ");
      for (let i=0; i<b; i++){
         console.log(star.join(""));
      };
+   }
 
+console.log(solutons(s))
