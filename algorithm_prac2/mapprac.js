@@ -6,4 +6,4 @@ numbers = numbers.map(function(value,index,arry){
     return value*value
 })
 
-numbers.forEach(console.log) // 매개변소가 콘솔로그 메소드
+numbers.forEach(console.log) // 매개변수가 콘솔로그 메소드

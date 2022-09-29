@@ -1,4 +1,4 @@
-let arr = [11333001111]
+let arr = [1,1,3,3,3,0,0,1,1,1,1]
 
 function solution(arr)
 {
@@ -11,3 +11,5 @@ function solution(arr)
 
     return array;
 }
+
+console.log(solution(arr))
