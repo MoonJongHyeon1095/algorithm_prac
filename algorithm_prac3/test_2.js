@@ -1,15 +1,19 @@
-let s = "hang hae ninety nine"
+function solution(s){
+    let arr = s.split('')
 
-
-    let arr = []
-    arr = s.split(' ').join('')
-    console.log(arr)
-
+    arr.forEach((v,i) =>  {
+        if (v === ' ') arr.splice(i-1, 1, arr[i-1] + ' ');
+        })
     
+    let answer = arr.join('').split('')
+    
+    for (let i=0; i < answer.length; i++) {
+        if (i%2 === 0) answer[i] = answer[i].toUpperCase();
+        else answer[i] = answer[i].toLowerCase();
+    }
+    return answer.join('').split('  ')
+}
 
-
-
-    //const arr2 = arr.map((v) => v.map(el.i))   
-   // const arr2 = arr.map((v) => v.map((el, i) => i%2==0 ? el.toUpperCase() : el.toLowerCase()).join('')).join(' ')
-
+let s = 'hang hae ninety nine';
+console.log(solution(s))
  
