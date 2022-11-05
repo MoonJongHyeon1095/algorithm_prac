@@ -35,7 +35,7 @@ class Square{
 
 class Square extends Rectangle {
     constructor(length){
-        super(length, length)
+        super(length, length) // 매개변수 이름 상위 클래스와 달라도 상관 없음.
     }
 }
 

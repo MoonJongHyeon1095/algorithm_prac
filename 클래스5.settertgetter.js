@@ -38,4 +38,7 @@ class Square {
   console.log(`정사각형 한 변의 길이는 ${square.getLength()}`) // 정사각형 한 변의 길이는 20
 
   //예외 발생
-  square.setLength(-10) // 길이는 0보다 커야 한대요
+  //square.setLength(-10) // 길이는 0보다 커야 한대요 
+
+  const squareB = new Square(-10) // 이렇게 넣어도 setter 작동
+  console.log(`정사각형의 둘레는 ${squareB.getPerimeter()}`) // 길이는 0보다 커야 한대요
